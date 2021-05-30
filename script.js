@@ -12,10 +12,11 @@ function validate() {
     window.document.getElementById("invalid").innerHTML =
       "please enter a password that is grater than 8 and lesser than 50 characters,with one upper case and one digit";
     window.document.getElementById("valid").style.display = "none";
-  } else {
-    console.log(pwd.split(""));
-    window.document.getElementById("valid").innerHTML =
-      " Congratulations! Password is valid";
   }
+  // else if (pwd.match(/[0-9]{1,}[a-zA-Z]{1,}/)) {
+  //   console.log(pwd.split(""));
+  //   window.document.getElementById("valid").innerHTML =
+  //     " Congratulations! Password is valid";
+  // }
   document.getElementById("password").value = "";
 }
